@@ -216,29 +216,26 @@ footer {
     #slideout-menu {
         /* display block; */
     }
+    #honeysamurai {
+        display: none;
+    }
 }
 
 @media (max-width:719px) {
     #honeysamurai {
-        max-width: 400px;
-        height: auto;
-        padding-top: 100px;
+      
     }
     #enter a{
         
     }
     footer {
-        padding-top: 450px;
+        
     }
     
 }
 
 @media (max-width:600px) {
-    #honeysamurai {
-        max-width: 300px;
-        height: auto;
-        padding-top: 0px;
-        padding-right: 220px;
+   
     }
     footer {
         padding-top: 175px;
