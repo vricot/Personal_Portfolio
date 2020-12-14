@@ -14,6 +14,12 @@ body {
     padding-bottom: 25px;
 }
 
+#mobile-banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 img {
     opacity: 0.9;
 }
@@ -181,20 +187,6 @@ nav ul{
     text-align: center;
 }
 
-/* Desktop Media Queries */
-
-@media (min-width: 720px) {
-    #banner {
-        
-    }
-}
-
-@media (min-width:1200px) {
-    #banner {
-        
-    }
-}
-
 /* Footer */
 
 footer {
@@ -204,7 +196,38 @@ footer {
     opacity: 0.7;
 }
 
-/* Mobile Media Qeries */
+/*** Media Queries ***/
+
+/* Desktop */
+
+@media (min-width:1200px) {
+    #honeysamurai-mobile {
+        display: none;
+    }  
+}
+
+@media (min-height:1200px) {
+    footer {
+        margin-top: 600px;
+    }
+    #banner {
+        padding-top: 600px;
+    }
+}
+
+/* iPad Pro */
+
+@media (min-width: 720px) {
+    #mobile-banner {
+        padding-top: 450px;
+    }  
+}
+
+@media (min-height: 1200px) {
+    footer {
+        margin-top: 250px;
+    }
+}
 
 @media (max-width:900px) {
     nav ul{
@@ -216,14 +239,11 @@ footer {
     #slideout-menu {
         /* display block; */
     }
-    #honeysamurai {
-        display: none;
-    }
 }
 
 @media (max-width:719px) {
     #honeysamurai {
-      
+      display: none;
     }
     #enter a{
         
@@ -234,10 +254,27 @@ footer {
     
 }
 
+/* Surface Duo */
+
 @media (max-width:600px) {
-   
+   #mobile-banner {
+       width: 1vw;
+       padding-left: 265px;
+       padding-top: 250px;
+   }
     }
     footer {
-        padding-top: 175px;
+        padding-top: 210px;
+    }
+    #banner {
+        display: none
     }
 }
+
+@media (max-height:) {
+    footer {
+        
+    }
+}
+
+/* iPhone */
