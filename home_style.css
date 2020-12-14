@@ -5,15 +5,6 @@ body {
     padding: 0;
 }
 
-#banner {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 300px;
-    padding-top: 350px;
-    padding-bottom: 25px;
-}
-
 #mobile-banner {
     display: flex;
     justify-content: center;
@@ -22,16 +13,24 @@ body {
 
 img {
     opacity: 0.9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 500px;
+    margin-top: 275px;
 }
 
 #enter {
     font-family: 'Press Start 2P' , monospace;
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 
 #enter a{
     text-decoration: none;
+    font-size: 20px;
 }
 
 #enter a:hover {
@@ -39,7 +38,9 @@ img {
 }
 
 footer {
-    padding-top: 300px;
+    position: relative;
+    top: 0;
+    bottom: 0;
 }
 
 /* Inputs */
@@ -64,14 +65,15 @@ textarea:focus {
     position: fixed;
     right: 0;
     top: 24px;
-    width: 500px;
+    width: 300px;
     pointer-events: none;
     z-index: 50;
     transition: 0.4s;
+    opacity: 0.9;
 }
 
 #searchbox input {
-    height: 48px;
+    height: 40px;
     width: 100%;
 }
 
@@ -123,7 +125,6 @@ nav ul{
 .icon {
     display: flex;
     align-items: center;
-    padding: 5px;
 }
 
 .active {
@@ -137,6 +138,56 @@ nav ul{
     color: mintcream;
     display: none;
     align-items: center;
+}
+
+#right-nav {
+    height: 62px;
+    width: 100%;
+    margin-left: 700px;
+    margin-top: 20px;
+    position: fixed;
+    font-family: 'Press Start 2P' , monospace;
+    font-size: 12px;
+    display: flex;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+    margin-left: 1045px;
+}
+
+#right-nav a {
+    padding: 0;
+    color: #cc66ff;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+#right-nav a:hover {
+    text-decoration: none;
+    color: #00ffcc;
+}
+
+#right-nav ul {
+    display: flex;
+    list-style: none;
+    align-items: right;
+    height: 100%;
+}
+
+#right-nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+
+#youtube {
+    position: relative;
+    bottom: 2px;
+}
+
+#github {
+    position: relative;
+    bottom: 2px;
 }
 
 /* Search Icon */
@@ -200,17 +251,34 @@ footer {
 
 /* Desktop */
 
+/*MacBook Pro*/
+
+@media (min-width:2000px) {
+    #mobile-banner {
+        width: ;
+    }
+    #right-nav {
+        margin-left: 1045px;
+    }
+}
+
 @media (min-width:1200px) {
     #honeysamurai-mobile {
-        display: none;
+        width: 90vw;
     }  
+    #right-nav {
+        margin-left: 1045px;
+    }
 }
 
 @media (min-height:1200px) {
+    #honeysamurai-mobile {
+        width: 90vw;
+    }
     footer {
         margin-top: 600px;
     }
-    #banner {
+    #mobile-banner {
         padding-top: 600px;
     }
 }
@@ -218,18 +286,30 @@ footer {
 /* iPad Pro */
 
 @media (min-width: 720px) {
+    #honeysamurai-mobile {
+        width: 90vw
+    }
     #mobile-banner {
         padding-top: 450px;
+    }
+    #right-nav {
+        margin-left: 1045px;
     }  
 }
 
 @media (min-height: 1200px) {
+    #honeysamurai-mobile {
+        width: 90vw
+    }
     footer {
         margin-top: 250px;
     }
 }
 
 @media (max-width:900px) {
+    #honeysamurai-mobile {
+        width: 90vw
+    }
     nav ul{
         display: none;
     }
@@ -242,8 +322,8 @@ footer {
 }
 
 @media (max-width:719px) {
-    #honeysamurai {
-      display: none;
+    #honeysamurai-mobile {
+        width: 90vw
     }
     #enter a{
         
@@ -262,12 +342,12 @@ footer {
        padding-left: 265px;
        padding-top: 250px;
    }
+   #honeysamurai-mobile {
+        width: 90vw
+   }
     }
     footer {
         padding-top: 210px;
-    }
-    #banner {
-        display: none
     }
 }
 
