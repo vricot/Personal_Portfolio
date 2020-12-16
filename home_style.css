@@ -259,6 +259,28 @@ textarea:focus {
 #slideout-menu .icon {
     display: inline;
 }
+
+/*****1st attempt at toggle
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + #slideout-menu {
+    display: block;
+}
+
+.fa fa-bars {
+    z-index: 100;
+}
+
+*******/
+
 /* Footer */
 
 footer {
