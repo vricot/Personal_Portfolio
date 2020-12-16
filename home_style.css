@@ -64,7 +64,6 @@ textarea:focus {
 /* Search Box */
 
 #searchbox {
-    display: none;
     position: fixed;
     right: 0;
     top: 12px;
@@ -268,7 +267,11 @@ footer {
 }
 
 /****Media Queries****/
-
+@media only screen and (min-width:320px) {
+    #searchbox {
+        display: none;
+    }
+}
 /* small tablets */
 
 @media only screen and (min-width:481px) {
@@ -335,6 +338,9 @@ footer {
     footer {
         position: fixed;
         bottom: 0;
+    }
+    #searchbox {
+        display: inline;
     }
 }
 
