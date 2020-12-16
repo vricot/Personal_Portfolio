@@ -346,6 +346,9 @@ footer {
     #enter a {
         font-size: 1.2rem;
     }
+    #right-nav {
+       
+    }
 /* big tablets, laptops, desktops */
 
 @media only screen and (min-width:1024px) {
@@ -389,4 +392,3 @@ footer {
         font-size: 1.2rem;
     }
 }
-
