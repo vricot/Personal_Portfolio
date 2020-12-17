@@ -199,7 +199,7 @@ textarea:focus {
 
 #search-icon {
     color: white;
-    padding: 0 32px;
+    padding: 0 32px 0 0;
     cursor: pointer;
     transition: 0.4s;
 }
@@ -384,7 +384,7 @@ footer {
     }
 
     #right-nav {
-        margin-left: 550px;
+        margin-left: 63%;
     }
 
     #right-nav .icon {
@@ -422,7 +422,7 @@ footer {
 
 @media only screen and (min-width:1024px) {
     #right-nav {
-        margin-left: 620px;
+        margin-left: 67%;;
     }
     #mobile-banner {
         position: relative;
@@ -439,12 +439,11 @@ footer {
         font-size: 1.2rem;
     }
 }
-
 /* hi-res laptops and desktops */
 
 @media only screen and (min-width:1281px) {
     #right-nav {
-        margin-left: 1045px;
+        margin-left: 74%;
     }
     #mobile-banner {
         position: relative;
