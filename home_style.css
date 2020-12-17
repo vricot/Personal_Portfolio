@@ -176,6 +176,11 @@ textarea:focus {
     color: #00ffcc;
 }
 
+#right-nav .icon:hover {
+    color: #00ffcc;
+    cursor: pointer;
+}
+
 #right-nav ul {
     display: none;
     /* display: flex; */
@@ -273,7 +278,7 @@ textarea:focus {
 #slideout-searchbox {
     margin-left: 0;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 #slideout-menu .icon {
@@ -283,13 +288,6 @@ textarea:focus {
 #slideout-menu label:hover {
     cursor: pointer;
 }
-
-/*#slideout-menu input[type="checkbox"]:checked + ul {
-    transform: translateY(-150%);
-    width: 100%;
-    background: rgb(255, 255, 255, 0.1);   
-    transition: all .5s;
-}*/
 
 #slideout-menu input[type="checkbox"]:checked + ul li:nth-child(1){
     background: rgb(255, 255, 255, 0); 
@@ -309,6 +307,10 @@ textarea:focus {
     top: 8px; 
     right: 93%; 
     transition: .4s;
+}
+
+#left-nav {
+    z-index: inherit;
 }
 
 input[type='checkbox'], input[type='radio'] {
