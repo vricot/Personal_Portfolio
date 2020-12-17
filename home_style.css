@@ -67,9 +67,9 @@ textarea:focus {
 
 #searchbox {
     position: fixed;
-    right: 0;
-    top: 12px;
-    width: 200px;
+    right: 5rem;
+    top: -25px;
+    width: 150px;
     pointer-events: none;
     z-index: 50;
     transition: 0.4s;
