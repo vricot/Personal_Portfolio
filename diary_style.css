@@ -9,12 +9,141 @@
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: inherit;
 }
 body {
     background-color: #ff94db;
-    font-family: 'Roboto' , sans-serif;
     margin: 0;
     padding: 0;
+}
+
+header {
+    width: 100%;
+}
+
+/* Diary CSS */
+
+p, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-meta {
+    font-family: 'Roboto', monospace;
+}
+
+main {
+    position: relative;
+    top: 9.5rem;
+    background-color: #cc66ff6e;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    margin-bottom: 30;
+}
+
+.page-heading {
+    font-size: 22px;
+    font-family: 'Press Start 2P', monospace;
+    color: #ff3399;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+}
+
+#title-box {
+    position: relative;
+    top: 9.5rem;
+    background-color: #00ffcc;
+    padding-top: 20;
+}
+
+.card-description {
+    text-align: center;
+    padding-top: 15;
+    padding-bottom: 20;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.card-description h3 {
+    font-family: "Press Start 2P", monospace;
+    color: #ff3399;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #00ffcc;
+    margin-bottom: 10;
+}
+
+.card-description a {
+    text-decoration: none;
+}
+
+.card-description h3:hover {
+    color: #00ffcc;
+}
+
+.card-description p {
+    
+}
+
+.card-meta {
+    font-family: monospace;
+    color: white;
+    margin-bottom: 15;
+}
+
+.card-meta a {
+    color: #cc66ff;
+}
+
+.card-meta a:hover {
+    color: #00ffcc;
+}
+
+.card-image {
+    opacity: 1;
+    position: relative;
+    left: 5%;
+    right: 5%;
+}
+
+.card {
+    margin-top: 30;
+    background-color: rgba(255, 255, 255, 0.692);
+    padding-top: 30;
+}
+
+.card p {
+    font-family: monospace;
+    color: white;
+}
+
+.btn-readmore {
+    font-family: monospace;
+    color: #cc66ff;
+}
+
+.btn-readmore:hover {
+    color: #00ffcc;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10;
+}
+
+.back-to-top {
+    position: relative;
+    top: 25%;
+    left: 75%;
+    bottom: 15;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #mobile-banner {
@@ -23,17 +152,17 @@ body {
     align-content: center;
 }
 
-img {
+#honeysamurai-mobile {
     opacity: 0.9;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
     max-width: 16em;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
-/* Inputs */
+/* Inputs Pulled from Index */
 
 input,
 textarea {
@@ -49,7 +178,7 @@ textarea:focus {
     outline: none;
 }
 
-/* Search Box */
+/* Search Box Pulled From Index*/
 
 #searchbox {
     position: fixed;
@@ -68,7 +197,13 @@ textarea:focus {
 }
 
 
-/* Navigation */
+/* Navigation Pulled from Index*/
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 
 #left-nav {
     height: 40px;
@@ -99,7 +234,6 @@ textarea:focus {
 
 #left-nav ul{
     display: none;
-    /* display: flex; */
    list-style: none;
     justify-content: space-around;
     align-items: center;
@@ -169,7 +303,6 @@ textarea:focus {
 
 #right-nav ul {
     display: none;
-    /* display: flex; */
     list-style: none;
     align-items: right;
     height: 100%;
@@ -181,7 +314,7 @@ textarea:focus {
     margin-right: 15px;
 }
 
-/* Search Icon */
+/* Search Icon Pulled From Index*/
 
 #search-icon {
     color: white;
@@ -194,7 +327,7 @@ textarea:focus {
     color: pink;
 }
 
-/* Slideout Menu */
+/* Slideout Menu Pulled From Index */
 
 #menu-icon {
     height: 100%;
@@ -307,7 +440,11 @@ input[type='checkbox'], input[type='radio'] {
     opacity: 0;
 }
 
-/* Footer */
+div#menu-icon {
+    height: 0;
+}
+
+/* Footer Pulled From Index*/
 
 footer {
     font-size: 7px;
@@ -316,9 +453,10 @@ footer {
     opacity: 0.7;
     position: fixed;
     bottom: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-/****Media Queries****/
+/****Media Queries Pulled From Index****/
 @media only screen and (min-width:320px) {
     #searchbox {
         display: none;
@@ -331,13 +469,16 @@ footer {
         position: fixed;
         top: 3rem;
     }
-    #enter {
-        position: relative;
-        top: 3rem;
-    }
     footer {
         position: fixed;
         bottom: 0;
+    }
+    #honeysamurai-mobile {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    #title-box {
+        margin-top: 1rem;
     }
 }
 
@@ -380,19 +521,26 @@ footer {
     #honeysamurai-mobile {
         max-width: 35rem;
     }
-    #enter {
-        position: relative;
-        top: 12.5rem;
-    }
-    #enter a {
-        font-size: 1.2rem;
-    }
     footer {
         position: fixed;
         bottom: 0;
     }
     #searchbox {
         display: inline;
+    }
+    nav {
+        position: fixed;
+    }
+    #title-box h1 {
+        margin-top: 9rem;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    .card {
+        font-size: 2rem;
+    }
+    .pagination {
+        font-size: 2rem;
     }
 }
 
@@ -448,4 +596,5 @@ footer {
 }
 
 
-/* New CSS */
+/****** NEW CSS for Diary Page *********/
+
