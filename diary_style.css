@@ -92,10 +92,6 @@ main {
     color: #ccff00;
 }
 
-.card-description p {
-    
-}
-
 .card-meta {
     font-family: monospace;
     color: white;
@@ -149,16 +145,34 @@ main {
 .pagination {
     display: flex;
     justify-content: center;
-    margin-top: 10;
+    margin-top: 22;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    color: #ff3399;
 }
 
 .back-to-top {
     position: relative;
     top: 25%;
-    left: 75%;
+    left: 78%;
     bottom: 15;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
+}
+
+.back-to-top a {
+    text-decoration: none;
+}
+
+.back-to-top a:hover {
+    color: #ff3399;
 }
 
 #mobile-banner {
@@ -546,16 +560,35 @@ footer {
     nav {
         position: fixed;
     }
-    #title-box h1 {
+    #title-box {
         margin-top: 9rem;
         margin-bottom: 1rem;
         font-size: 2.5rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        box-shadow: 0rem 10px #ff3399da;
+        left: 5%;
+        right: 5%;
     }
+    #title-box h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2rem;
+    }
+
     .card {
         font-size: 2rem;
+        line-height: 2.5rem;
+        position: relative;
+        margin-top: 70px;
+        box-shadow: 0rem 2rem #00ccffc5;
+        padding-bottom: .5rem;
+    }
+    .btn-readmore {
+        font-size: 1.5rem;
     }
     .pagination {
         font-size: 2rem;
+        margin-top: 4rem;
     }
 }
 
@@ -567,6 +600,7 @@ footer {
     #enter a {
         font-size: 1.2rem;
     }
+}
 /* big tablets, laptops, desktops */
 
 @media only screen and (min-width:1024px) {
@@ -608,6 +642,27 @@ footer {
     #enter a {
         font-size: 1.2rem;
     }
+    .card {
+        line-height: 3rem;
+        padding-bottom: 2rem;
+    }
+    .card-description p {
+        font-size: 3rem;
+    }
+    .card-description h3 {
+        letter-spacing: 1rem;
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .card-meta {
+        font-size: 2.5rem;
+    }
+
+    .btn-readmore {
+        font-size: 2rem;
+        position: relative;
+        top: 1rem;
 }
 
 
