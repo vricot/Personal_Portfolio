@@ -485,7 +485,13 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
-/****Media Queries Pulled From Index****/
+/*Diary Post */
+
+
+
+
+
+/****Media Queries****/
 @media only screen and (min-width:320px) {
     #searchbox {
         display: none;
@@ -664,4 +670,6 @@ footer {
         position: relative;
         top: 1rem;
 }
+
+
 
