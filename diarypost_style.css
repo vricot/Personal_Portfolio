@@ -41,15 +41,15 @@ main {
 }
 
 .page-heading {
-    font-size: 22px;
+    font-size: 15px;
     font-family: 'Press Start 2P', monospace;
     color: #ff3399;
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
-    letter-spacing: .5rem;
+    letter-spacing: .25rem;
     text-transform: uppercase;
-}
+} 
 
 #title-box {
     position: relative;
@@ -57,39 +57,33 @@ main {
     bottom: 0;
     background-color: #00ffcc;
     padding-top: 20;
-    border-style: solid;
-    border-color: #ff3399;
-    box-shadow: 0px 6px #ff3399d3;
-    width: 90%;
+    max-width: 90%;
     position: relative;
     left: 4%;
     right: 5%;
+    text-align: center;
 }
 
 .card-description {
-    text-align: center;
+    text-align: left;
     padding-top: 15;
     padding-bottom: 20;
     padding-left: 5%;
     padding-right: 5%;
+    background-color: #ff94db;
 }
 
 .card-description h3 {
     font-family: "Press Start 2P", monospace;
-    color: #ff3399;
+    color: #00ffcc;
     text-transform: uppercase;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #00ffcc;
     margin-bottom: 10;
 }
 
 .card-description a {
     text-decoration: none;
-}
-
-.card-description h3:hover {
-    color: #ccff00;
 }
 
 .card-meta {
@@ -106,6 +100,28 @@ main {
     color: #ccff00;
 }
 
+.card-meta-diarypost {
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    letter-spacing: .5rem;
+}
+
+.card-meta-diarypost a {
+    text-decoration: none;
+    color: #00ffcc;
+    text-transform: uppercase;
+}
+
+.card-meta-diarypost a:hover {
+    color: #ccff00;
+}
+
+.category-title {
+    margin-top: .30rem;
+}
+
 .card-image {
     opacity: 1;
     position: relative;
@@ -114,12 +130,8 @@ main {
 }
 
 .card {
-    margin-top: 30;
-    background-color: #cc66ff;
-    padding-top: 30;
-    border-style: solid;
-    border-color: #00ccff;
-    box-shadow: 0px 10px #00ccffd0;
+    margin-top: 25;
+    padding-top: 0;
 }
 
 .card p {
@@ -485,11 +497,31 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
-/*Diary Post */
+/* Comments Section */
 
+#comments-section {
+    font-family: monospace;
+    color: #ff3399;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    background-color: white;
+    max-width: 90%;
+    left: 5%;
+    margin-bottom: 5%;
+}
 
-
-
+#sidebar {
+    background-color: white;
+    color: #ff3399;
+    max-width: 90%;
+    position: relative;
+    left: 5%;
+    right: 5%;
+    padding-bottom: 30px;
+}
 
 /****Media Queries****/
 @media only screen and (min-width:320px) {
@@ -586,7 +618,6 @@ footer {
         line-height: 2.5rem;
         position: relative;
         margin-top: 70px;
-        box-shadow: 0rem 2rem #00ccffc5;
         padding-bottom: .5rem;
     }
     .btn-readmore {
