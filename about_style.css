@@ -22,18 +22,8 @@ header {
     width: 100%;
 }
 
-/* Diary CSS */
-
 p, h3{
     font-family: 'Roboto', sans-serif;
-}
-
-main {
-    position: relative;
-    top: 9rem;
-    padding-top: 0;
-    padding-bottom: 8%;
-    margin-bottom: 30;
 }
 
 .page-heading {
@@ -60,6 +50,26 @@ main {
     position: relative;
     left: 4%;
     right: 5%;
+}
+
+#page-container {
+    background-color: rgba(223, 255, 252, 0.815);
+    display: grid;
+    grid-template-columns: ;
+    margin-top: 12rem;
+    max-width: 90%;
+    position: relative;
+    left: 5%;
+    right: 5%;
+}
+
+#name-container {
+    margin-left: 8;
+}
+
+#img-container img {
+    width: 125px;
+    margin-left: 8;
 }
 
 .back-to-top {
