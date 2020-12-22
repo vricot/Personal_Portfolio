@@ -22,7 +22,7 @@ header {
     width: 100%;
 }
 
-p, h3{
+p, h3, h4{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -31,11 +31,19 @@ p, h3{
 #page-container {
     background-color: rgba(223, 255, 252, 0.815);
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
     margin-top: 10rem;
     max-width: 90%;
     position: relative;
-    left: 3%;
+    left: 5%;
     right: 5%;
+    grid-template-areas: "about about"
+    "about about"
+    "quote quote"
+    "education education"
+    "audio status"
+    "favorites favorites";
 }
 
 /*Names*/
@@ -44,6 +52,7 @@ p, h3{
     background-color: rgb(122, 247, 188);
     font-size: 10px;
     height: 2rem;
+    width: 9rem;
     order: 1;
     grid-area: name;
     position: relative;
@@ -55,6 +64,7 @@ p, h3{
 #img-container {
     background-color: purple;
     height: 12.5rem;
+    width: 9rem;
     position: relative;
     top: -4.5rem;
     order: 3;
@@ -78,7 +88,9 @@ p, h3{
     "img basic"
     "intro intro";
     background-color: white;
-}
+    grid-area: about;
+    max-width: 90vw;
+    }
 
 #basic-info-container {
     background-color: rgb(81, 81, 245);
@@ -87,6 +99,7 @@ p, h3{
     font-size: 12px;
     grid-area: basic;
     padding: 6;
+    position: relative;
 }
 
 /*Intro Bottom Bar*/
@@ -98,7 +111,7 @@ p, h3{
     grid-row: span 2;
     grid-area: intro;
     position: relative;
-    top: -4rem;
+    top: -4.5rem;
     padding: 5;
     font-size: 13.5px;
 }
@@ -107,24 +120,43 @@ p, h3{
 
 #education-container {
     background-color: rgb(53, 174, 255);
-    height: 12rem;
+    height: 8rem;
+    max-width: 90vw;
     font-size: 12px;
+    grid-area: education;
+    padding: 5;
+    position: relative;
+    top: -4rem;
 }
 
 /*Quote*/
 
 #quote-container {
     background-color: rgb(255, 103, 103);
-    height: 11rem;
+    height: 5rem;
+    max-width: 90vw;
     position: relative;
+    top: -4rem;
+    grid-area: quote;
+    width: ;
+    padding: 5;
 }
 
 /*Audio*/
 
 #song-container {
     background-color: rgb(255, 255, 149);
-    height: 4rem;
+    height: 6rem;
     position: relative;
+    top: -3rem;
+    grid-area: audio;
+    padding: 5;
+    margin-right: .5rem;
+}
+
+#audio {
+    width: 140px;
+    margin-top: 20;
 }
 
 /*Status*/
@@ -132,13 +164,21 @@ p, h3{
 #status-container {
     background-color: rgb(30, 30, 128);
     position: relative;
-    height: 10rem;
+    top: -3rem;
+    height: 6rem;
+    grid-area: status;
+    padding: 5;
 }
 
 /*Favorite*/
 
 #favorites-container {
     background-color: rgb(126, 52, 126);
+    grid-area: favorites;
+    position: relative;
+    top: -2rem;
+    max-width: 90vw;
+    font-size: 14px;
 }
 
 /*Back To Top Button*/
