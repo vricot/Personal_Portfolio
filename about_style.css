@@ -24,16 +24,17 @@ header {
 
 p {
     font-family: monospace;
+    color: white;
 }
 
 h3, h4 {
     font-family: "Press Start 2P", monospace;
+    color: white;
 }
 
 /*Overall Page Container*/
 
 #page-container {
-    background-color: rgba(223, 255, 252, 0.815);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(100px, auto);
@@ -43,7 +44,6 @@ h3, h4 {
     left: 5%;
     right: 5%;
     grid-template-areas: "about about"
-    "about about"
     "quote quote"
     "education education"
     "audio status"
@@ -53,7 +53,6 @@ h3, h4 {
 /*Names*/
 
 #name-container {
-    background-color: rgb(122, 247, 188);
     font-size: 10px;
     height: 2rem;
     width: 9rem;
@@ -75,7 +74,6 @@ h3, h4 {
 /*Profile Picture*/
 
 #img-container {
-    background-color: purple;
     height: 12.5rem;
     width: 9rem;
     position: relative;
@@ -98,15 +96,21 @@ h3, h4 {
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas: "name basic"
     "img basic"
-    "img basic"
     "intro intro";
-    background-color: white;
     grid-area: about;
     max-width: 90vw;
+    padding: none;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-style: solid;
+    box-shadow: 0px 10px #ff3399d7;
+    border-color: #ff3399;
     }
 
+#about-container h3, h4 {
+    color: #ff3399;
+}
+   
 #basic-info-container {
-    background-color: rgb(81, 81, 245);
     height: 13.5rem;
     order: 2;
     font-size: 12px;
@@ -126,10 +130,8 @@ h3, h4 {
 }
 
 #intro-container {
-    background-color: rgb(248, 202, 115);
     order: 4;
     position: relative;
-    grid-row: span 2;
     grid-area: intro;
     position: relative;
     top: -4.5rem;
@@ -145,47 +147,53 @@ h3, h4 {
 /*Education*/
 
 #education-container {
-    background-color: rgb(53, 174, 255);
+    background-color: rgba(255, 255, 255, 0.863);
     height: 10rem;
     max-width: 90vw;
     font-size: 12px;
     grid-area: education;
     padding: 5;
     position: relative;
-    top: -3rem;
+    top: -1rem;
+    border-style: solid;
+    border-color: #ff3399;
+    box-shadow: 0px 10px #ff3399e0;
 }
 
 #education-container h3 {
     margin-left: 5;
     font-size: .6rem;
+    color: #ff3399;
 }
 
 /*Quote*/
 
 #quote-container {
-    background-color: rgb(255, 103, 103);
+    background-color: rgba(255, 255, 255, 0.801);
     height: 6rem;
     max-width: 90vw;
     position: relative;
-    top: -4rem;
+    top: -3rem;
     grid-area: quote;
-    width: ;
     padding: 5;
+    padding-bottom: 10;
+    border-style: solid;
+    border-color: #ff3399;
+    box-shadow: 0px 10px #ff3399e3;
 }
 
 #quote-container p {
     font-family: "Press Start 2P", monospace;
     font-size: 12px;
-    line-height: 1.1;
+    line-height: 1.2;
+    color: #ff3399;
 }
 
 /*Audio*/
 
 #song-container {
-    background-color: rgb(255, 255, 149);
     height: 6rem;
     position: relative;
-    top: -2rem;
     grid-area: audio;
     padding: 5;
     margin-right: .5rem;
@@ -199,34 +207,44 @@ h3, h4 {
 /*Status*/
 
 #status-container {
-    background-color: rgb(30, 30, 128);
+    background-color: rgba(255, 255, 255, 0.849);
     position: relative;
-    top: -2rem;
     height: 6rem;
     grid-area: status;
     padding: 5;
+    border-style: solid;
+    border-color: #ff3399;
+    box-shadow: 0px 10px #ff3399e7;
 }
 
 #status-container h4 {
     font-size: .7rem;
     margin-left: 5;
+    color: #ff3399;
 }
 
 /*Favorite*/
 
 #favorites-container {
-    background-color: rgb(126, 52, 126);
+    background-color: rgba(255, 255, 255, 0.829);
     grid-area: favorites;
     position: relative;
-    top: -1rem;
+    top: 1rem;
     max-width: 90vw;
     font-size: 14px;
     padding-top: 5;
+    border-style: solid;
+    border-color: #ff3399;
+    box-shadow: 0px 10px #ff3399c4;
 }
 
 #favorites-container h3 {
     font-size: .6rem;
     margin-left: 5;
+}
+
+#favorites-container h3, p {
+    color: #ff3399;
 }
 
 /*Back To Top Button*/
