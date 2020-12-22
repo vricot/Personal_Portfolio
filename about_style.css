@@ -26,41 +26,15 @@ p, h3{
     font-family: 'Roboto', sans-serif;
 }
 
-.page-heading {
-    font-size: 22px;
-    font-family: 'Press Start 2P', monospace;
-    color: #ff3399;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-    letter-spacing: .5rem;
-    text-transform: uppercase;
-}
-
-#title-box {
-    position: relative;
-    top: 9.5rem;
-    bottom: 0;
-    background-color: #00ffcc;
-    padding-top: 20;
-    border-style: solid;
-    border-color: #ff3399;
-    box-shadow: 0px 6px #ff3399d3;
-    width: 90%;
-    position: relative;
-    left: 4%;
-    right: 5%;
-}
-
 /*Overall Page Container*/
 
 #page-container {
     background-color: rgba(223, 255, 252, 0.815);
     display: grid;
-    margin-top: 12rem;
+    margin-top: 10rem;
     max-width: 90%;
     position: relative;
-    left: 5%;
+    left: 3%;
     right: 5%;
 }
 
@@ -72,14 +46,17 @@ p, h3{
     height: 2rem;
     order: 1;
     grid-area: name;
+    position: relative;
+    bottom: 0;
 }
 
 /*Profile Picture*/
 
 #img-container {
     background-color: purple;
-    height: 11rem;
+    height: 12.5rem;
     position: relative;
+    top: -4.5rem;
     order: 3;
     grid-area: img;
 }
@@ -104,9 +81,12 @@ p, h3{
 }
 
 #basic-info-container {
+    background-color: rgb(81, 81, 245);
+    height: 13.5rem;
     order: 2;
     font-size: 12px;
     grid-area: basic;
+    padding: 6;
 }
 
 /*Intro Bottom Bar*/
@@ -117,6 +97,10 @@ p, h3{
     position: relative;
     grid-row: span 2;
     grid-area: intro;
+    position: relative;
+    top: -4rem;
+    padding: 5;
+    font-size: 13.5px;
 }
 
 /*Education*/
