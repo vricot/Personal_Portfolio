@@ -608,7 +608,7 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
-/****Media Queries Pulled From Index****/
+/*Media Queries*/
 @media only screen and (min-width:320px) {
     #searchbox {
         display: none;
@@ -631,6 +631,12 @@ footer {
     }
     #title-box {
         margin-top: 1rem;
+    }
+    #luna {
+        width: 160px;
+        position: relative;
+        top: -.5rem;
+        margin-left: 10%;
     }
 }
 
@@ -683,26 +689,172 @@ footer {
     nav {
         position: fixed;
     }
-    #title-box {
-        margin-top: 9rem;
-        margin-bottom: 1rem;
-        font-size: 2.5rem;
-        padding-top: 3rem;
-        padding-bottom: 1rem;
-        box-shadow: 0rem 10px #ff3399da;
-        left: 5%;
-        right: 5%;
+    #page-container {
+        position: relative;
+        top: 9rem;
     }
-    #title-box h1 {
-        font-size: 2.5rem;
-        letter-spacing: 2rem;
+    #about-container {
+        width: 50%;
+        padding-bottom: 9rem;
+    }
+    #name-container h3, p {
+        font-size: 1rem;
+    }
+    #img-container {
+        position: relative;
+        margin-top: 6px;
+    }
+    #img-container img {
+        width: 210px;
+    }
+    #basic-info-container {
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+    }
+    #basic-info-container h4 {
+        font-size: .8rem;
+    }
+    #basic-info-container p {
+        font-size: 1.3rem;
+    }
+    #intro-container {
+        position: relative;
+        top: 5rem;
+    }
+    #intro-container p {
+        font-size: 1.5rem;
+    }
+    #intro-container h3 {
+        font-size: 1rem;
+    }
+    #audio {
+        margin-top: 1rem;
+        width: 20rem;
+    }
+    #quote-container {
+        width: 45%;
+        padding-bottom: 5rem;
+        margin-top: -30rem;
+        margin-left: 27rem;
+        border-style: none;
+        box-shadow: none;
+        background: none;
+        padding-bottom: 10rem;
+    }
+    #quote-container p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 5px 2px #ff3399;
+    }
+    #education-container {
+        width: 45%;
+        position: absolute;
+        margin-top: -64rem;
+        padding-bottom: 11rem;
+        padding-top: 1rem;
+        left: 27rem;
+    }
+    #education-container h3 {
+        font-size: 1rem;
+    }
+    #education-container p {
+        font-size: 1.5rem;
+    }
+    #status-container {
+        position: relative;
+        top: -22rem;
+        left: 9.5rem;
+        width: 60%;
+        padding-bottom: 2rem;
+    }
+    #status-container h4 {
+        font-size: 1rem;
+    }
+    #status-container p {
+        font-size: 1.5rem;
+    }
+    #luna-container {
+        position: relative;
+        top: -9rem;
+        left: 30%;
+    }
+    #luna {
+        width: 400px;
+    }
+    #favorites-container {
+        position: relative;
+        top: 2.5rem;
+    }
+    #favorites-container h3 {
+        font-size: 1rem;
+    }
+    #favorites-container p {
+        font-size: 1.5rem;
+    }
+    .back-to-top {
+        position: relative;
+        top: 21rem;
+        left: 90%;
+    }
+}
+
+@media only screen and (min-width:930px) {
+    #education-container {
+        position: absolute;
+        top: 6rem;
+        left: 53%;
+    }
+    #quote-container {
+        position: absolute;
+        left: 5%;
     }
 }
 
 @media only screen and (min-width:970px) {
-   
+    #education-container {
+        position: relative;
+        left: 29rem;
+        margin-top: -64rem;
+    }
+    #quote-container {
+        margin-left: 29rem;
+    }
+    #status-container {
+        position: relative;
+        left: 10rem;
+    }
+    #luna-container {
+        left: 40%;
+    }
 }
-/* big tablets, laptops, desktops */
+
+@media only screen and (min-width:1058px) {
+    #education-container {
+        position: absolute;
+        top: 8rem;
+    }
+    #quote-container {
+        position: absolute;
+        top: 5rem;
+    }
+}
+
+@media only screen and (min-width:1080px) {
+   #education-container {
+       position: absolute;
+       top: 10rem;
+       margin-left: 3rem;
+   }
+   #quote-container {
+       position: absolute;
+       top: 7rem;
+       left: 5%;
+   }
+}
+
+    /* big tablets, laptops, desktops */
 
 @media only screen and (min-width:1024px) {
     #right-nav {
@@ -715,7 +867,31 @@ footer {
     #honeysamurai-mobile {
         max-width: 35rem;
     }
+    #education-container {
+        position: relative;
+        left: 31rem;
+        margin-top: -64rem;
+    }
+    #quote-container {
+        margin-left: 31rem;
+    }
+    #status-container {
+        position: relative;
+        left: 11rem;
+    }
 }
+
+@media only screen and (min-width:1179px) {
+    #education-container {
+        position: absolute;
+        left: 48%;
+    }
+    #quote-container {
+        position: absolute;
+        left: 7%;
+    }
+}
+
 /* hi-res laptops and desktops */
 
 @media only screen and (min-width:1281px) {
@@ -728,6 +904,65 @@ footer {
     }
     #honeysamurai-mobile {
         max-width: 35rem;
+    }
+    #education-container {
+        position: relative;
+        left: 38.5rem;
+        top: 12rem;
+        margin-top: -64rem;
+    }
+    #quote-container {
+        margin-left: 38.5rem;
+        top: 10rem;
+        padding-bottom: 20rem;
+    }
+    #quote-container p {
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+    }
+    #status-container {
+        position: relative;
+        left: 13.5rem;
+        margin-top: 22rem;
+        padding-bottom: 5rem;
+        padding-top: 1rem;
+    }
+    #status-container h4 {
+        font-size: 1.5rem;
+    }
+    #status-container p {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    #luna-container {
+    position: relative;
+    left: -10%;
+    }
+    #luna {
+    width: 550px;
+    margin-top: 5rem;
+    }
+    #favorites-container {
+        margin-top: -13rem;
+        padding-top: 1rem;
+    }
+    #favorites-container h3 {
+        font-size: 1.15rem;
+    }
+    #favorites-container p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width:1300px) {
+    #education-container {
+        position: absolute;
+        left: 49%;
+    }
+    #quote-container {
+        position: absolute;
+        left: 7%;
     }
 }
 
