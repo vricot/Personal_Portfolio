@@ -29,7 +29,6 @@ p {
 
 h3, h4 {
     font-family: "Press Start 2P", monospace;
-    color: white;
 }
 
 /*Overall Page Container*/
@@ -46,7 +45,7 @@ h3, h4 {
     grid-template-areas: "about about"
     "quote quote"
     "education education"
-    "audio status"
+    "luna status"
     "favorites favorites";
 }
 
@@ -134,7 +133,7 @@ h3, h4 {
     position: relative;
     grid-area: intro;
     position: relative;
-    top: -4.5rem;
+    top: -4rem;
     padding: 5;
     font-size: 13.5px;
 }
@@ -154,7 +153,7 @@ h3, h4 {
     grid-area: education;
     padding: 5;
     position: relative;
-    top: -1rem;
+    top: 4rem;
     border-style: solid;
     border-color: #ff3399;
     box-shadow: 0px 10px #ff3399e0;
@@ -166,6 +165,10 @@ h3, h4 {
     color: #ff3399;
 }
 
+#education-container p {
+    margin-bottom: .50rem;
+}
+
 /*Quote*/
 
 #quote-container {
@@ -173,7 +176,7 @@ h3, h4 {
     height: 6rem;
     max-width: 90vw;
     position: relative;
-    top: -3rem;
+    top: 2rem;
     grid-area: quote;
     padding: 5;
     padding-bottom: 10;
@@ -191,17 +194,28 @@ h3, h4 {
 
 /*Audio*/
 
-#song-container {
+#luna-container {
     height: 6rem;
     position: relative;
-    grid-area: audio;
+    top: 6rem;
+    grid-area: luna;
     padding: 5;
     margin-right: .5rem;
 }
 
 #audio {
-    width: 140px;
-    margin-top: 20;
+    padding-left: 5;
+    width: 210px;
+    position: relative;
+    top: 1rem;
+}
+
+/*Luna IMG*/
+
+#luna {
+    margin-top: 13;
+    width: 100%;
+    opacity: 0.6;
 }
 
 /*Status*/
@@ -209,6 +223,7 @@ h3, h4 {
 #status-container {
     background-color: rgba(255, 255, 255, 0.849);
     position: relative;
+    top: 6rem;
     height: 6rem;
     grid-area: status;
     padding: 5;
@@ -221,6 +236,11 @@ h3, h4 {
     font-size: .7rem;
     margin-left: 5;
     color: #ff3399;
+    margin-bottom: .25rem;
+}
+
+#status-container p {
+    margin-bottom: .5rem;
 }
 
 /*Favorite*/
@@ -229,10 +249,12 @@ h3, h4 {
     background-color: rgba(255, 255, 255, 0.829);
     grid-area: favorites;
     position: relative;
-    top: 1rem;
+    top: 8.5rem;
+    margin-bottom: 20%;
     max-width: 90vw;
     font-size: 14px;
-    padding-top: 5;
+    padding-top: 8;
+    padding-left: 5;
     border-style: solid;
     border-color: #ff3399;
     box-shadow: 0px 10px #ff3399c4;
@@ -245,6 +267,14 @@ h3, h4 {
 
 #favorites-container h3, p {
     color: #ff3399;
+}
+
+#favorites-container h3 {
+    margin-bottom: .5rem;
+}
+
+#favorites-container p {
+    margin-bottom: 1rem;
 }
 
 /*Back To Top Button*/
