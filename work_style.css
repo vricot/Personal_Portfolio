@@ -388,6 +388,7 @@ main {
 /*Section Divs*/
 
 .section-div {
+    background-color: white;
     width: 90%;
     height: 15rem;
     margin-bottom: 2rem;
@@ -479,6 +480,50 @@ footer {
         display: none;
     }
 }
+
+@media only screen and (min-width:350px) {
+    .section-div {
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (min-width:380px) {
+    .section-div {
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+    main {
+        position: relative;
+        top: 13rem;
+    }
+}
+
+@media only screen and (min-width:407px) {
+    .section-div {
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width:437px) {
+    .section-div {
+        width: 90%;
+        margin-bottom: 6rem;
+    }
+}
+
+@media only screen and (min-width:461px) {
+    .section-div {
+        width: 90%;
+        margin-bottom: 7rem;
+    }
+    main {
+        position: relative;
+        top: 15rem;
+    }
+}
+
 /* small tablets */
 
 @media only screen and (min-width:481px) {
@@ -496,6 +541,27 @@ footer {
     }
     #title-box {
         margin-top: 1rem;
+    }
+    .section-div {
+        margin-bottom: 8.5rem;
+    }
+}
+
+@media only screen and (min-width:521px) {
+    .section-div {
+        width: 90%;
+        margin-bottom: 10rem;
+    }
+    main {
+        position: relative;
+        top: 17rem;
+    }
+}
+
+@media only screen and (min-width:561px) {
+    .section-div {
+        width: 90%;
+        margin-bottom: 11.5rem;
     }
 }
 
@@ -560,34 +626,29 @@ footer {
     }
     #title-box h1 {
         font-size: 2.5rem;
-        letter-spacing: 2rem;
     }
-
-    .card {
-        font-size: 2rem;
-        line-height: 2.5rem;
+    main {
         position: relative;
-        margin-top: 70px;
-        box-shadow: 0rem 2rem #00ccffc5;
-        padding-bottom: .5rem;
+        top: 25rem;
     }
-    .btn-readmore {
-        font-size: 1.5rem;
+    #fashion {
+        position: relative;
+        margin-bottom: 28rem;
     }
-    .pagination {
-        font-size: 1rem;
-        margin-top: 4rem;
+    .section-div {
+        position: relative;
+        margin-bottom: 32rem;
+    }
+    .caption-div h3 {
+        font-size: 1.3rem;
+    }
+    .img-div {
+        width: 800px;
     }
 }
 
 @media only screen and (min-width:970px) {
-    #enter {
-        position: relative;
-        top: 12.5rem;
-    }
-    #enter a {
-        font-size: 1.2rem;
-    }
+    
 }
 /* big tablets, laptops, desktops */
 
@@ -602,13 +663,26 @@ footer {
     #honeysamurai-mobile {
         max-width: 35rem;
     }
-    #enter {
+    main {
         position: relative;
-        top: 12.5rem;
+        top: 13rem;
     }
-    #enter a {
-        font-size: 1.2rem;
+    #fashion {
+        position: relative;
+        margin-bottom: 28rem;
     }
+    .section-div {
+        position: relative;
+        margin-bottom: 7rem;
+        height: auto;
+    }
+    .caption-div h3 {
+        font-size: 1.7rem;
+    }
+    .img-div {
+        width: 900px;
+    }
+
 }
 /* hi-res laptops and desktops */
 
@@ -623,33 +697,24 @@ footer {
     #honeysamurai-mobile {
         max-width: 35rem;
     }
-    #enter {
+    main {
         position: relative;
-        top: 12.5rem;
+        top: 13rem;
     }
-    #enter a {
-        font-size: 1.2rem;
+    #fashion {
+        position: relative;
+        margin-bottom: 3rem;
     }
-    .card {
-        line-height: 3rem;
-        padding-bottom: 2rem;
+    .section-div {
+        position: relative;
+        margin-bottom: 7rem;
+        height: auto;
     }
-    .card-description p {
-        font-size: 3rem;
-    }
-    .card-description h3 {
-        letter-spacing: 1rem;
-        font-size: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
-    }
-    .card-meta {
-        font-size: 2.5rem;
-    }
-
-    .btn-readmore {
+    .caption-div h3 {
         font-size: 2rem;
-        position: relative;
-        top: 1rem;
+    }
+    .img-div {
+        width: 1100px;
+    }
 }
 
