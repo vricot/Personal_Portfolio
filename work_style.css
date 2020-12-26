@@ -56,7 +56,6 @@ main {
     width: 90%;
     position: relative;
     left: 4%;
-    right: 5%;
 }
 
 
@@ -82,6 +81,8 @@ main {
     display: flex;
     justify-content: center;
     align-content: center;
+    position: relative;
+    left: -4%;
 }
 
 #honeysamurai-mobile {
@@ -562,6 +563,9 @@ footer {
         width: 90%;
         margin-bottom: 11.5rem;
     }
+    #title-box h1 {
+        font-size: 1.5rem;
+    }
 }
 
 /* regular tablets */
@@ -619,7 +623,6 @@ footer {
         font-size: 2.5rem;
         padding-top: 3rem;
         padding-bottom: 1rem;
-        box-shadow: 0rem 10px #ff3399da;
         left: 5%;
         right: 5%;
     }
@@ -658,13 +661,23 @@ footer {
     #mobile-banner {
         position: relative;
         top: 10rem;
+        width: 90%;
+        left: 5%;
     }
     #honeysamurai-mobile {
         max-width: 35rem;
     }
+    #title-box {
+        width: 90%;
+    }
+    #title-box h1 {
+        font-size: 2.5rem;
+    }
     main {
         position: relative;
         top: 13rem;
+        width: 90%;
+        left: 5%;
     }
     #fashion {
         position: relative;
@@ -690,30 +703,64 @@ footer {
         margin-left: 74%;
     }
     #mobile-banner {
-        position: relative;
-        top: 10rem;
+        display: none;
     }
-    #honeysamurai-mobile {
-        max-width: 35rem;
+    #title-box {
+        position: relative;
+        top: 1rem;
+        height: 1rem;
+        display: grid;
+        align-content: center;
+        background: none;
+        border-style: none;
+        box-shadow: none;
+        position: relative;
+        width: 90%;
+        left: 5%;
+    }
+    #title-box h1 {
+        font-size: 30px;
+        color: #f8007c;
     }
     main {
         position: relative;
-        top: 13rem;
+        top: 17.5rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: 10px;
+        position: relative;
+        left: 5%;
     }
     #fashion {
         position: relative;
-        margin-bottom: 3rem;
+        margin-bottom: 0;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        position: relative;
+        top: -15rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     .section-div {
         position: relative;
-        margin-bottom: 7rem;
         height: auto;
+        margin-bottom: 0;
     }
     .caption-div h3 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .img-div {
-        width: 1100px;
+        width: 350px;
+    }
+    .back-to-top {
+        position: relative;
+        top: 32.5rem;
+        left: 90%;
+        display: none;
     }
 }
 
