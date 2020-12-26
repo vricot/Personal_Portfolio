@@ -376,21 +376,83 @@ div#menu-icon {
     height: 0;
 }
 
-/*Sections*/
+/*Main*/
 
-#coding {
+main {
     position: relative;
-    top: 2rem;
-    left: 5%;
-    right: 5%;
-    width: 83%;
+    top: 11rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-.caption-div {
+/*Section Divs*/
+
+.section-div {
+    width: 90%;
+    height: 15rem;
+    margin-bottom: 2rem;
     position: relative;
-    top: 2.5rem;
     left: 5%;
     right: 5%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+/*Link Styles*/
+
+.section-div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Web Developer */
+
+#coding {
+    margin-bottom: 15;
+    width: 100%;
+}
+#web-dev .caption-div {
+    position: relative;
+    top: 0;
+}
+
+/*Storyteller*/
+
+#storyteller .caption-div {
+    position: relative;
+    top: 0;
+}
+
+#sailor-saturn {
+    margin-bottom: 15;
+    width: 100%;
+}
+
+/*Fashion*/
+
+#sailor-makeup {
+    margin-bottom: 15;
+    width: 100%;
+}
+
+#fashion {
+    margin-bottom: -2rem;
+}
+
+#fashion .caption-div {
+    position: relative;
+    top: 0;
+}
+
+/*Captions*/
+.caption-div {
+    position: relative;
+    top: 1.5rem;
     text-align: center;
 }
 .caption-div h3 {
@@ -399,29 +461,7 @@ div#menu-icon {
     color: #f8007c;
 }
 
-#storyteller {
-    position: relative;
-    top: 2rem;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-}
-
-#fashion {
-    position: relative;
-    top: 3rem;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-    margin-bottom: 15;
-}
-
-section:hover {
-    cursor: pointer;
-    width: 105%;
-}
-
-/* Footer Pulled From Index*/
+/* Footer*/
 
 footer {
     font-size: 7px;
