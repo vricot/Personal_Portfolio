@@ -434,6 +434,12 @@ a:hover {
 
 .button:hover {
     transform: scale(1.1);
+    margin-right: 2%;
+    margin-left: 1.15%;
+}
+
+.button h3:hover {
+    color: #00ffcc;
 }
 
 .back-to-top {
@@ -454,7 +460,7 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
-/****Media Queries Pulled From Index****/
+/****Media Queries****/
 @media only screen and (min-width:320px) {
     #searchbox {
         display: none;
@@ -462,45 +468,31 @@ footer {
 }
 
 @media only screen and (min-width:350px) {
-    .section-div {
-        width: 90%;
-        margin-bottom: 3rem;
-    }
+  #title-box {
+      position: relative;
+      top: 9rem;
+  }
 }
 
 @media only screen and (min-width:380px) {
-    .section-div {
-        width: 90%;
-        margin-bottom: 4rem;
-    }
-    main {
-        position: relative;
-        top: 13rem;
-    }
+  
 }
 
 @media only screen and (min-width:407px) {
-    .section-div {
-        width: 90%;
-        margin-bottom: 5rem;
-    }
+   #title-box {
+       position: relative;
+       top: 10rem;
+   }
 }
 
 @media only screen and (min-width:437px) {
-    .section-div {
-        width: 90%;
-        margin-bottom: 6rem;
-    }
+  
 }
 
 @media only screen and (min-width:461px) {
-    .section-div {
-        width: 90%;
-        margin-bottom: 7rem;
-    }
-    main {
+    #title-box {
         position: relative;
-        top: 15rem;
+        top: 11rem;
     }
 }
 
@@ -520,37 +512,63 @@ footer {
         margin-top: 0;
     }
     #title-box {
-        margin-top: 1rem;
+        position: relative;
+        top: 11.75rem;
     }
-    .section-div {
-        margin-bottom: 8.5rem;
+    .button {
+        padding-top: 20;
+        padding-bottom: 20;
     }
 }
 
 @media only screen and (min-width:521px) {
-    .section-div {
-        width: 90%;
-        margin-bottom: 10rem;
+    #title-box {
+        position: relative;
+        top: 13rem;
     }
-    main {
+}
+
+@media only screen and (min-width:561px) {
+    #title-box {
+        position: relative;
+        top: 14rem;
+    }
+}
+
+@media only screen and (min-width:649px) {
+    #title-box {
+        position: relative;
+        top: 15.5rem;
+    }
+}
+
+@media only screen and (min-width:721px) {
+    #title-box {
         position: relative;
         top: 17rem;
     }
 }
 
-@media only screen and (min-width:561px) {
-    .section-div {
-        width: 90%;
-        margin-bottom: 11.5rem;
+@media only screen and (min-width:791px) {
+    #title-box {
+        position: relative;
+        top: 18.5rem;
     }
-    #title-box h1 {
-        font-size: 1.5rem;
+}
+
+@media only screen and (min-width:865px) {
+    #title-box {
+        position: relative;
+        top: 19.7rem;
     }
 }
 
 /* regular tablets */
 
 @media only screen and (min-width:900px) {
+    body {
+        overflow-y: scroll;
+    }
 
     #menu-icon {
         display: none;
@@ -598,8 +616,9 @@ footer {
         position: fixed;
     }
     #title-box {
-        margin-top: 9rem;
-        margin-bottom: 1rem;
+        position: relative;
+        top: 22.5rem;
+        margin-bottom: 50;
         font-size: 2.5rem;
         padding-top: 3rem;
         padding-bottom: 1rem;
@@ -609,28 +628,20 @@ footer {
     #title-box h1 {
         font-size: 2.5rem;
     }
-    main {
+    .header-img {
         position: relative;
-        top: 25rem;
+        top: -320;
     }
-    #fashion {
-        position: relative;
-        margin-bottom: 28rem;
-    }
-    .section-div {
-        position: relative;
-        margin-bottom: 32rem;
-    }
-    .caption-div h3 {
-        font-size: 1.3rem;
-    }
-    .img-div {
-        width: 800px;
+    .back-to-top {
+        display: block;
     }
 }
 
 @media only screen and (min-width:970px) {
-    
+    #title-box {
+        position: relative;
+        top: 24.5rem;
+    }
 }
 /* big tablets, laptops, desktops */
 
@@ -653,29 +664,29 @@ footer {
     #title-box h1 {
         font-size: 2.5rem;
     }
-    main {
-        position: relative;
-        top: 13rem;
-        width: 90%;
-        left: 5%;
-    }
-    #fashion {
-        position: relative;
-        margin-bottom: 28rem;
-    }
-    .section-div {
-        position: relative;
-        margin-bottom: 7rem;
-        height: auto;
-    }
-    .caption-div h3 {
-        font-size: 1.7rem;
-    }
-    .img-div {
-        width: 900px;
-    }
-
 }
+
+@media only screen and (min-width:1079px) {
+    #title-box {
+        position: relative;
+        top: 26.5rem;
+    }
+}
+
+@media only screen and (min-width:1173px) {
+    #title-box {
+        position: relative;
+        top: 28.5rem;
+    }
+}
+
+@media only screen and (min-width:1270px) {
+    #title-box {
+        position: relative;
+        top: 30.5rem;
+    }
+}
+
 /* hi-res laptops and desktops */
 
 @media only screen and (min-width:1281px) {
@@ -687,13 +698,10 @@ footer {
     }
     #title-box {
         position: relative;
-        top: 1rem;
+        top: 31rem;
         height: 1rem;
         display: grid;
         align-content: center;
-        background: none;
-        border-style: none;
-        box-shadow: none;
         position: relative;
         width: 90%;
         left: 5%;
@@ -702,45 +710,29 @@ footer {
         font-size: 30px;
         color: #f8007c;
     }
-    main {
+    .header-img {
         position: relative;
-        top: 17.5rem;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        height: 10px;
-        position: relative;
-        left: 5%;
-    }
-    #fashion {
-        position: relative;
-        margin-bottom: 0;
-    }
-    section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        justify-content: center;
-        position: relative;
-        top: -15rem;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    .section-div {
-        position: relative;
-        height: auto;
-        margin-bottom: 0;
-    }
-    .caption-div h3 {
-        font-size: 1rem;
-    }
-    .img-div {
-        width: 350px;
+        top: -17rem;
     }
     .back-to-top {
         position: relative;
-        top: 32.5rem;
+        top: 7rem;
         left: 90%;
-        display: none;
+    }
+    .button {
+        padding-top: 35;
+        padding-bottom: 35;
+        margin-bottom: 4%;
+    }
+    .button h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    #title-box {
+        position: relative;
+        top: 33.5rem;
     }
 }
 
