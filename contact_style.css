@@ -10,7 +10,7 @@
 html, body {
     height: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 body {
     background-color: #ff94db;
@@ -79,12 +79,10 @@ main {
 }
 
 #mobile-banner {
-    display: none;
-    /*display: flex;*/
+    display: flex;
     justify-content: center;
     align-content: center;
     position: relative;
-    left: -4%;
 }
 
 #honeysamurai-mobile {
