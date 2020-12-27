@@ -94,7 +94,7 @@ main {
 
 .card-meta {
     font-family: monospace;
-    color: white;
+    color: #ff3399;
     margin-bottom: 15;
 }
 
@@ -115,16 +115,16 @@ main {
 
 .card {
     margin-top: 30;
-    background-color: #cc66ff;
+    background-color: rgba(255, 255, 255, 0.788);
     padding-top: 30;
     border-style: solid;
-    border-color: #00ccff;
-    box-shadow: 0px 10px #00ccffd0;
+    border-color: #ff3399;
+    box-shadow: 0px 10px #ff3399e3;
 }
 
 .card p {
     font-family: monospace;
-    color: white;
+    color: #ff3399;
 }
 
 .btn-readmore {
@@ -580,7 +580,7 @@ footer {
         line-height: 2.5rem;
         position: relative;
         margin-top: 70px;
-        box-shadow: 0rem 2rem #00ccffc5;
+        box-shadow: 0rem 2rem #ff3399e3;
         padding-bottom: .5rem;
     }
     .btn-readmore {
