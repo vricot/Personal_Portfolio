@@ -1,0 +1,738 @@
+/*CSS Pulled from Index*/
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body {
+    background-color: #ff94db;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+}
+
+p, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    position: relative;
+    top: 9rem;
+    padding-top: 0;
+    padding-bottom: 8%;
+    margin-bottom: 30;
+}
+
+.page-heading {
+    font-size: 12px;
+    font-family: 'Press Start 2P', monospace;
+    color: #ff3399;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#title-box {
+    position: relative;
+    top: 8rem;
+    bottom: 0;
+    background-color: #00ffcc;
+    padding-top: 20;
+    border-style: solid;
+    border-color: #ff3399;
+    box-shadow: 0px 6px #ff3399d3;
+    width: 90%;
+    position: relative;
+    left: 4%;
+}
+
+
+
+.back-to-top {
+    position: relative;
+    top: 50%;
+    left: 78%;
+    bottom: 15;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.back-to-top a {
+    text-decoration: none;
+}
+
+.back-to-top a:hover {
+    color: #ff3399;
+}
+
+#mobile-banner {
+    display: none;
+    /*display: flex;*/
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: -4%;
+}
+
+#honeysamurai-mobile {
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 16em;
+    margin-top: 2em;
+}
+
+/* Inputs Pulled from Index */
+
+input,
+textarea {
+    height: 32px;
+    padding: 0 10px;
+    font-family: monospace;
+    font-size: 12px;
+    border: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Search Box Pulled From Index*/
+
+#searchbox {
+    position: fixed;
+    right: 5rem;
+    top: -25px;
+    width: 150px;
+    pointer-events: none;
+    z-index: 50;
+    transition: 0.4s;
+    opacity: 0.9;
+}
+
+#searchbox input {
+    height: 2em;
+    width: 100%;
+}
+
+
+/* Navigation Pulled from Index*/
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#left-nav {
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: 'Press Start 2P' , monospace;
+    font-size: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+
+#left-nav a {
+    padding: 0;
+    color: #c653ff;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+#left-nav a:hover {
+    text-decoration: none;
+    color: #00ffcc;
+}
+
+#left-nav ul{
+    display: none;
+   list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+#left-nav .nav-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+}
+
+#right-nav .nav-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+}
+
+#left-nav .icon {
+    display: flex;
+    align-items: center;
+}
+
+#right-nav .icon {
+    display: flex;
+    align-items: center;
+}
+
+.active {
+    color: #bf3eff;
+}
+
+#right-nav {
+    height: 10px;
+    width: 100%;
+    margin-left: 700px;
+    margin-top: 0.8rem;
+    position: fixed;
+    font-family: 'Press Start 2P' , monospace;
+    font-size: 8px;
+    display: flex;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+    margin-left: 1045px;
+}
+
+#right-nav a {
+    padding: 0;
+    color: #c653ff;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+#right-nav a:hover {
+    text-decoration: none;
+    color: #00ffcc;
+}
+
+#right-nav .icon:hover {
+    color: #00ffcc;
+    cursor: pointer;
+}
+
+#right-nav ul {
+    display: none;
+    list-style: none;
+    align-items: right;
+    height: 100%;
+}
+
+#right-nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Search Icon Pulled From Index*/
+
+#search-icon {
+    color: white;
+    padding: 0 32px 0 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#search-icon:hover {
+    color: pink;
+}
+
+/* Slideout Menu Pulled From Index */
+
+#menu-icon {
+    height: 100%;
+    font-size: 28px;
+    padding: 0 4px;
+    color: mintcream;
+    align-items: center;
+}
+
+#slideout-menu {
+    z-index: 100;
+    position: fixed;
+    transition: 0.4s;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 8px;
+    padding-top: 12px;
+    letter-spacing: 2px;
+}
+
+#slideout-menu ul {
+    transform: translateY(-150%);
+    width: 100%;
+    background: rgb(255, 255, 255, 0.1);   
+    transition: all .5s;
+}
+
+#slideout-menu input[type="checkbox"]:checked + ul {
+    transform: translateY(-6%);
+    width: 100%;
+    background: #ff3399;   
+    transition: all .5s;
+}
+
+#slideout-menu ul {
+    list-style: none;
+    padding: 15px 32px 0 0;
+}
+
+#slideout-menu ul li {
+    padding: 5px;
+    list-style: none;
+}
+
+#slideout-menu a {
+    font-family: 'Press Start 2P' , monospace;
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+#slideout-menu a:hover {
+    cursor: pointer;
+    color: #ccff00;
+}
+
+#slideout-menu input {
+    width: 50%;
+    padding: 0;
+    padding-bottom: 2px;
+    font-family: monospace;
+    font-size: 10px;
+    text-align: center;
+    height: 20px;
+}
+
+#slideout-searchbox {
+    margin-left: 0;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+#slideout-menu .icon {
+    display: inline;
+}
+
+#slideout-menu label:hover {
+    cursor: pointer;
+}
+
+#slideout-menu input[type="checkbox"]:checked + ul li:nth-child(1){
+    background: rgb(255, 255, 255, 0); 
+    color: #fff;
+}  
+
+#slideout-menu label:before {
+    font-size: 24px;
+    font-family: FontAwesome;
+    content: "\f0c9";
+    text-align: center;
+    color: mintcream;
+}
+
+#slideout-menu label {
+    position: fixed; 
+    top: 8px; 
+    right: 93%; 
+    transition: .4s;
+}
+
+#left-nav {
+    z-index: inherit;
+}
+
+input[type='checkbox'], input[type='radio'] {
+    display:none;
+}
+
+#menu-icon {
+    opacity: 0;
+}
+
+div#menu-icon {
+    height: 0;
+}
+
+/*Main*/
+
+main {
+    position: relative;
+    top: 11rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*Header Image*/
+
+#typing {
+    width: 50%;
+    justify-self: center;
+}
+
+.header-img {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top: -14rem;
+    display: grid;
+}
+
+/*Buttons*/
+
+.button {
+    background: rgba(255, 255, 255, 0.815);
+    padding-top: 15;
+    padding-bottom: 15;
+    padding-left: 5;
+    padding-right: 5;
+    width: 90%;
+    margin-bottom: 20;
+    position: relative;
+    left: 3.5%;
+    top: -7rem;
+    box-shadow: inset 5px 5px 5px rgb(226, 173, 182);
+}
+.button h3 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 16px;
+    text-align: center;
+    color: #ff3399;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    margin-right: 2%;
+    margin-left: 1.15%;
+}
+
+.button h3:hover {
+    color: #00ffcc;
+}
+
+.back-to-top {
+    display: none;
+    position: relative;
+    top: 7.5rem;
+}
+
+/* Footer*/
+
+footer {
+    font-size: 7px;
+    padding-left: 20px;
+    color: white;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/****Media Queries****/
+@media only screen and (min-width:320px) {
+    #searchbox {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:350px) {
+  #title-box {
+      position: relative;
+      top: 9rem;
+  }
+}
+
+@media only screen and (min-width:380px) {
+  
+}
+
+@media only screen and (min-width:407px) {
+   #title-box {
+       position: relative;
+       top: 10rem;
+   }
+}
+
+@media only screen and (min-width:437px) {
+  
+}
+
+@media only screen and (min-width:461px) {
+    #title-box {
+        position: relative;
+        top: 11rem;
+    }
+}
+
+/* small tablets */
+
+@media only screen and (min-width:481px) {
+    #honeysamurai-mobile {
+        position: fixed;
+        top: 3rem;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+    #honeysamurai-mobile {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    #title-box {
+        position: relative;
+        top: 11.75rem;
+    }
+    .button {
+        padding-top: 20;
+        padding-bottom: 20;
+    }
+}
+
+@media only screen and (min-width:521px) {
+    #title-box {
+        position: relative;
+        top: 13rem;
+    }
+}
+
+@media only screen and (min-width:561px) {
+    #title-box {
+        position: relative;
+        top: 14rem;
+    }
+}
+
+@media only screen and (min-width:649px) {
+    #title-box {
+        position: relative;
+        top: 15.5rem;
+    }
+}
+
+@media only screen and (min-width:721px) {
+    #title-box {
+        position: relative;
+        top: 17rem;
+    }
+}
+
+@media only screen and (min-width:791px) {
+    #title-box {
+        position: relative;
+        top: 18.5rem;
+    }
+}
+
+@media only screen and (min-width:865px) {
+    #title-box {
+        position: relative;
+        top: 19.7rem;
+    }
+}
+
+/* regular tablets */
+
+@media only screen and (min-width:900px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    #slideout-menu {
+        display: none;
+    }
+
+    #slideout-searchbox {
+        display: none;
+    }
+
+    #left-nav ul {
+        display: flex;
+    }
+
+    #left-nav {
+        margin-left: 1rem;
+    }
+
+    #right-nav ul {
+        display: flex;
+    }
+
+    #right-nav {
+        margin-left: 63%;
+    }
+
+    #right-nav .icon {
+        display: inline;
+    }
+
+    #honeysamurai-mobile {
+        max-width: 35rem;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+    #searchbox {
+        display: inline;
+    }
+    nav {
+        position: fixed;
+    }
+    #title-box {
+        position: relative;
+        top: 22.5rem;
+        margin-bottom: 50;
+        font-size: 2.5rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        left: 5%;
+        right: 5%;
+    }
+    #title-box h1 {
+        font-size: 2.5rem;
+    }
+    .header-img {
+        position: relative;
+        top: -320;
+    }
+    .back-to-top {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:970px) {
+    #title-box {
+        position: relative;
+        top: 24.5rem;
+    }
+}
+/* big tablets, laptops, desktops */
+
+@media only screen and (min-width:1024px) {
+    #right-nav {
+        margin-left: 67%;;
+    }
+    #mobile-banner {
+        position: relative;
+        top: 10rem;
+        width: 90%;
+        left: 5%;
+    }
+    #honeysamurai-mobile {
+        max-width: 35rem;
+    }
+    #title-box {
+        width: 90%;
+    }
+    #title-box h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width:1079px) {
+    #title-box {
+        position: relative;
+        top: 26.5rem;
+    }
+}
+
+@media only screen and (min-width:1173px) {
+    #title-box {
+        position: relative;
+        top: 28.5rem;
+    }
+}
+
+@media only screen and (min-width:1270px) {
+    #title-box {
+        position: relative;
+        top: 30.5rem;
+    }
+}
+
+/* hi-res laptops and desktops */
+
+@media only screen and (min-width:1281px) {
+    #right-nav {
+        margin-left: 74%;
+    }
+    #mobile-banner {
+        display: none;
+    }
+    #title-box {
+        position: relative;
+        top: 31rem;
+        height: 1rem;
+        display: grid;
+        align-content: center;
+        position: relative;
+        width: 90%;
+        left: 5%;
+    }
+    #title-box h1 {
+        font-size: 30px;
+        color: #f8007c;
+    }
+    .header-img {
+        position: relative;
+        top: -17rem;
+    }
+    .back-to-top {
+        position: relative;
+        top: 7rem;
+        left: 90%;
+    }
+    .button {
+        padding-top: 35;
+        padding-bottom: 35;
+        margin-bottom: 4%;
+    }
+    .button h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    #title-box {
+        position: relative;
+        top: 33.5rem;
+    }
+}
+
