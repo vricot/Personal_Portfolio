@@ -42,11 +42,12 @@ main {
     justify-content: center;
     padding-bottom: 20px;
     text-transform: uppercase;
+    letter-spacing: .5rem;
 }
 
 #title-box {
     position: relative;
-    top: 8rem;
+    top: 8.5rem;
     bottom: 0;
     background-color: #00ffcc;
     padding-top: 20;
@@ -389,7 +390,7 @@ main {
 
 /*Header Image*/
 
-#typing {
+#sailor-saturn {
     width: 50%;
     justify-self: center;
 }
@@ -414,7 +415,7 @@ main {
     margin-bottom: 20;
     position: relative;
     left: 3.5%;
-    top: -7rem;
+    top: -7.5rem;
     box-shadow: inset 5px 5px 5px rgb(226, 173, 182);
 }
 .button h3 {
