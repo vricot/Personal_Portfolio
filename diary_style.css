@@ -473,6 +473,32 @@ div#menu-icon {
     height: 0;
 }
 
+/*Subscribe Form*/
+
+.subscribe-container {
+    background-color: rgba(255, 255, 255, 0.897);
+    margin-top: 18;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    display: grid;
+    padding-top: 10;
+    padding-left: 10;
+}
+
+.subscribe-container h3 {
+    font-family: monospace;
+    color: #ff3399;
+    margin-bottom: 15;
+    background-color: #00ffcc;
+    position: relative;
+    right: 1.5%;
+}
+
+.subscribe-container input {
+    margin-bottom: 20;
+}
+
 /* Footer Pulled From Index*/
 
 footer {
