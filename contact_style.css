@@ -47,7 +47,7 @@ main {
 
 #title-box {
     position: relative;
-    top: 8.5rem;
+    top: 9rem;
     bottom: 0;
     background-color: #00ffcc;
     padding-top: 20;
@@ -87,7 +87,7 @@ main {
 
 #honeysamurai-mobile {
     opacity: 0.9;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -377,72 +377,107 @@ div#menu-icon {
     height: 0;
 }
 
-/*Main*/
+/*Contact Container*/
 
-main {
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.884);
+    width: 90%;
     position: relative;
-    top: 11rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    left: 5%;
+    top: 1.25rem;
+    padding-bottom: 5;
+}
+
+/*Description*/
+
+.description-container {
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+
+.description-container p {
+    font-family: monospace;
+    color: #c653ff;
+}
+
+.description-container ul li {
+    margin-left: 15%;
+    font-family: monospace;
+    color: #c653ff;
+    margin-top: 7;
+    margin-bottom: 7;
+}
+
+#email-address {
+    width: 150px;
+    margin-bottom: 5;
+}
+
+/*Form*/
+
+.form-container {
+    margin-top: 15;
+}
+
+.input-container {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-bottom: 17;
+}
+
+#name-container input {
+    position: relative;
+    left: 10%;
+}
+
+#email-container input {
+    position: relative;
+    left: 7%;
+}
+
+#message-container input {
+    position: relative;
+    left: 1.5%;
+}
+
+label {
+    font-family: monospace;
+    color: #c653ff;
+}
+#button-container {
+    display: grid;
+    justify-content: center;
+}
+
+#submit:hover {
+    cursor: pointer;
+    border-style: solid;
+    border-color: #ff3399d3;
+    color: #ff3399;
+    text-transform: uppercase;
 }
 
 /*Header Image*/
 
-#sailor-saturn {
-    width: 50%;
-    justify-self: center;
+.envelope-container {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    display: grid;
+    justify-content: center;
 }
 
-.header-img {
-    width: 90%;
-    position: relative;
-    left: 5%;
-    top: -14rem;
-    display: grid;
+#envelope-img {
+    width: 100%;
+    margin-top: 20;
+    margin-bottom: 15;
 }
 
 /*Buttons*/
 
-.button {
-    background: rgba(255, 255, 255, 0.815);
-    padding-top: 15;
-    padding-bottom: 15;
-    padding-left: 5;
-    padding-right: 5;
-    width: 90%;
-    margin-bottom: 20;
-    position: relative;
-    left: 3.5%;
-    top: -7.5rem;
-    box-shadow: inset 5px 5px 5px rgb(226, 173, 182);
-}
-.button h3 {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 16px;
-    text-align: center;
-    color: #ff3399;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    cursor: pointer;
-}
-
-.button:hover {
-    transform: scale(1.1);
-    margin-right: 2%;
-    margin-left: 1.15%;
-}
-
-.button h3:hover {
-    color: #00ffcc;
-}
-
 .back-to-top {
-    display: none;
     position: relative;
     top: 7.5rem;
 }
