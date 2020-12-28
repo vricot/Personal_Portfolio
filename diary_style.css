@@ -497,6 +497,7 @@ div#menu-icon {
 
 .subscribe-container input {
     margin-bottom: 20;
+    color: #ff3399;
 }
 
 /* Footer Pulled From Index*/
@@ -534,6 +535,10 @@ footer {
     }
     #title-box {
         margin-top: 1rem;
+    }
+    .subscribe-container h3 {
+        width: 62%;
+        left: 16.5%;
     }
 }
 
@@ -616,6 +621,17 @@ footer {
         font-size: 1rem;
         margin-top: 4rem;
     }
+    .subscribe-container h3 {
+        position: relative;
+        right: .6%;
+    }
+    .subscribe-container input {
+        margin-right: 45;
+    }
+    .subscribe-container h3 {
+        width: 35%;
+        left: 30%;
+    }
 }
 
 @media only screen and (min-width:970px) {
@@ -640,12 +656,20 @@ footer {
     #honeysamurai-mobile {
         max-width: 35rem;
     }
-    #enter {
-        position: relative;
-        top: 12.5rem;
+    .subscribe-container {
+        height: 170px;
     }
-    #enter a {
-        font-size: 1.2rem;
+    .subscribe-container h3 {
+        position: relative;
+        font-size: 2rem;
+        width: 60%;
+        left: 20%;
+    }
+    .subscribe-container input {
+        margin-top: 5;
+        margin-right: 45;
+        margin-bottom: 25;
+        font-size: 2rem;
     }
 }
 /* hi-res laptops and desktops */
@@ -689,5 +713,21 @@ footer {
         font-size: 2rem;
         position: relative;
         top: 1rem;
+    }
+    .subscribe-container {
+        height: 500px;
+    }
+    .subscribe-container h3 {
+        width: 60%;
+        margin-top: 40;
+        left: 20%;
+        font-size: 3rem;
+    }
+    .subscribe-container input {
+        font-size: 3rem;
+        padding: 30;
+        padding-bottom: 55;
+        margin-top: 20;
+    }
 }
 
