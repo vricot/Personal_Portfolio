@@ -440,6 +440,8 @@ div#menu-icon {
 #message-container input {
     position: relative;
     left: 1.5%;
+    padding-top: 20;
+    padding-bottom: 80;
 }
 
 label {
@@ -495,38 +497,31 @@ footer {
 }
 
 /****Media Queries****/
+
 @media only screen and (min-width:320px) {
     #searchbox {
         display: none;
     }
 }
 
-@media only screen and (min-width:350px) {
-  #title-box {
-      position: relative;
-      top: 9rem;
-  }
-}
-
-@media only screen and (min-width:380px) {
-  
-}
-
-@media only screen and (min-width:407px) {
-   #title-box {
-       position: relative;
-       top: 10rem;
-   }
-}
-
-@media only screen and (min-width:437px) {
-  
-}
-
-@media only screen and (min-width:461px) {
-    #title-box {
+@media only screen and (min-width:400px) {
+    #email-address {
         position: relative;
-        top: 11rem;
+        top: 9;
+    }
+    #name-container input {
+        position: relative;
+        left: 7%;
+    }
+    
+    #email-container input {
+        position: relative;
+        left: 5%;
+    }
+    
+    #message-container input {
+        position: relative;
+        left: 1%;
     }
 }
 
@@ -547,63 +542,66 @@ footer {
     }
     #title-box {
         position: relative;
-        top: 11.75rem;
+        top: 11rem;
     }
-    .button {
-        padding-top: 20;
-        padding-bottom: 20;
+    .contact-container {
+        position: relative;
+        top: 4rem;
+        margin-bottom: 50;
+    }
+    #email-address {
+        position: relative;
+        top: 9;
+    }
+    #name-container input {
+        position: relative;
+        left: 7%;
+    }
+    
+    #email-container input {
+        position: relative;
+        left: 5%;
+    }
+    
+    #message-container input {
+        position: relative;
+        left: 1%;
+        width: 275px;
     }
 }
 
-@media only screen and (min-width:521px) {
-    #title-box {
+@media only screen and (min-width:600px) {
+    #name-container input {
         position: relative;
-        top: 13rem;
+        left: 6%;
+    }
+    
+    #email-container input {
+        position: relative;
+        left: 4%;
+    }
+    
+    #message-container input {
+        position: relative;
+        left: 1%;
     }
 }
 
-@media only screen and (min-width:561px) {
-    #title-box {
+@media only screen and (min-width:700px) {
+    #name-container input {
         position: relative;
-        top: 14rem;
+        left: 5%;
     }
-}
-
-@media only screen and (min-width:649px) {
-    #title-box {
+    
+    #email-container input {
         position: relative;
-        top: 15.5rem;
-    }
-}
-
-@media only screen and (min-width:721px) {
-    #title-box {
-        position: relative;
-        top: 17rem;
-    }
-}
-
-@media only screen and (min-width:791px) {
-    #title-box {
-        position: relative;
-        top: 18.5rem;
-    }
-}
-
-@media only screen and (min-width:865px) {
-    #title-box {
-        position: relative;
-        top: 19.7rem;
+        left: 3.5%;
     }
 }
 
 /* regular tablets */
 
 @media only screen and (min-width:900px) {
-    body {
-        overflow-y: scroll;
-    }
-
     #menu-icon {
         display: none;
     }
@@ -651,7 +649,7 @@ footer {
     }
     #title-box {
         position: relative;
-        top: 22.5rem;
+        top: 20rem;
         margin-bottom: 50;
         font-size: 2.5rem;
         padding-top: 3rem;
@@ -662,21 +660,30 @@ footer {
     #title-box h1 {
         font-size: 2.5rem;
     }
-    .header-img {
+   .contact-container {
+       position: relative;
+       top: 11.75rem;
+       margin-bottom: 200;
+   }
+   #name-container input {
         position: relative;
-        top: -320;
+        left: 4%;
     }
-    .back-to-top {
-        display: block;
+    #email-container input {
+        position: relative;
+        left: 3%;
+    }
+    #subject-container input {
+        position: relative;
+        left: .3%;
+    }
+    #message-container input {
+        height: 120px;
+        width: 400px;
+        padding-top: 0;
     }
 }
 
-@media only screen and (min-width:970px) {
-    #title-box {
-        position: relative;
-        top: 24.5rem;
-    }
-}
 /* big tablets, laptops, desktops */
 
 @media only screen and (min-width:1024px) {
@@ -700,73 +707,67 @@ footer {
     }
 }
 
-@media only screen and (min-width:1079px) {
-    #title-box {
-        position: relative;
-        top: 26.5rem;
-    }
-}
-
-@media only screen and (min-width:1173px) {
-    #title-box {
-        position: relative;
-        top: 28.5rem;
-    }
-}
-
-@media only screen and (min-width:1270px) {
-    #title-box {
-        position: relative;
-        top: 30.5rem;
-    }
-}
-
 /* hi-res laptops and desktops */
 
 @media only screen and (min-width:1281px) {
     #right-nav {
         margin-left: 74%;
     }
-    #mobile-banner {
-        display: none;
-    }
     #title-box {
         position: relative;
-        top: 31rem;
-        height: 1rem;
-        display: grid;
-        align-content: center;
+        top: 20rem;
         position: relative;
-        width: 90%;
-        left: 5%;
-    }
-    #title-box h1 {
-        font-size: 30px;
-        color: #f8007c;
-    }
-    .header-img {
-        position: relative;
-        top: -17rem;
     }
     .back-to-top {
         position: relative;
         top: 7rem;
         left: 90%;
     }
-    .button {
-        padding-top: 35;
-        padding-bottom: 35;
-        margin-bottom: 4%;
+    .contact-container p {
+        font-size: 2rem;
     }
-    .button h3 {
-        font-size: 1.5rem;
+    .contact-container ul li {
+        font-size: 2rem;
+    }
+    .contact-container label {
+        font-size: 2rem;
+    }
+    .contact-container input {
+        font-size: 2rem;
+        height: 3rem;
+    }
+    .input-container {
+        margin-bottom: 40;
+    }
+    #email-address {
+        width: 250px;
+    }
+    #envelope-img {
+        width: 800px;
+    }
+    #name-container input {
+        position: relative;
+        left: 6%;
+    }
+    #email-container input {
+        position: relative;
+        left: 4.5%;
+    }
+    #message-container input {
+        height: 170px;
+        width: 500px;
+        padding-top: 0;
     }
 }
 
 @media only screen and (min-width:1400px) {
-    #title-box {
+    #name-container input {
         position: relative;
-        top: 33.5rem;
+        left: 5%;
+    }
+    #email-container input {
+        position: relative;
+        left: 3.75%;
     }
 }
 
