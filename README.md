@@ -1,6 +1,6 @@
 Hello and welcome to my Personal Portfolio! Here you can find out all about me! ^_^ 
 
-This is my first Wordpress website built entirely using HTML, CSS, and a tiny bit of Javascript. Untracked are the PHP files and new changes to clean up design & tie things together with backend. To see the live site please visit [site URL to come].
+This is my first Wordpress website built entirely using HTML and CSS, with a bit of Bootstrap & Javascript. Untracked are the PHP files and new changes to clean up design & tie things together with backend. To see the live site please visit [site URL to come].
 
 For easier backend support, style.css is the most recent, consolidated stylesheet file for this project. All other stylesheet files are previous versions that were made separately and are no longer in use. 
 
